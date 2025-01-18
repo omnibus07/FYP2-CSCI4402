@@ -1,0 +1,161 @@
+/* Main Content Layout */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* Weather Card Styles */
+.weather-card {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6));
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    padding: 2rem;
+    min-height: 300px;
+    transition: 0.3s;
+}
+
+.temperature {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.temperature-range {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-icon {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-info {
+    position: relative;
+    z-index: 1;
+}
+
+/* Weather Background Images */
+.weather-clear,
+.weather-mist {
+    background-image: url('./images/clear-sky.jpg');
+}
+
+.weather-clouds  {
+    background-image: url('./images/cloudy.jpg');
+}
+
+.weather-rain {
+    background-image: url('./images/rain.jpg');
+}
+
+.weather-thunderstorm {
+    background-image: url('./images/storm.jpg');
+}
+
+/* News and About Section */
+.news-card,
+.about-section {
+    border-radius: 15px;
+    padding: 1rem;
+    height: 100%;
+}
+
+.news-card {
+    background: #00ff9d;
+}
+
+.about-section {
+    background: #bbd4fb;
+}
+
+/* Warning Section */
+.warning-section {
+    background: #4a0f2e;
+    color: #fff;
+    border-radius: 15px;
+    padding: 1.5rem;
+}
+
+.warning-card {
+    background: #ffd4d4;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Side Navigation */
+.side-nav {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.side-nav a {
+    display: block;
+    color: var(--primary);
+    text-decoration: none;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 15px;
+    border: none;
+}
+
+/* Card Styles */
+.card {
+    border-radius: 15px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Tab Content */
+.tab-content > .tab-pane {
+    display: none;
+}
+
+.tab-content > .active {
+    display: block;
+}
+
+/* Forecast Container */
+#forecastContainer {
+    min-height: 300px;
+    padding: 1rem;
+}
+
+/* Custom Date Display */
+.custom-published-date {
+    background: #fff;
+    padding: 7px;
+    border-radius: 25px;
+    width: 100px;
+    font-size: small;
+    margin: 0px;
+}
+
+/* Typography */
+p {
+    font-weight: 300; /* Light */
+}
+
+.small-text {
+    font-weight: 100; /* Super Light */
+}
